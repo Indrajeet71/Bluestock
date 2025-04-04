@@ -1,6 +1,6 @@
-# Bluestock Backend 🏦🚀
+# Bluestock Backend 
 
-## 📌 Overview
+## Overview
 Bluestock Backend is a **Django REST API** that powers the Bluestock platform, managing IPO (Initial Public Offerings) data and interactions.
 
 This backend:
@@ -11,7 +11,7 @@ This backend:
 
 ---
 
-## 🚀 Features
+## Features
 ✅ **CRUD operations** for IPOs  
 ✅ **Django REST Framework (DRF)** integration  
 ✅ **Django Filters** for IPO search & filtering  
@@ -21,16 +21,16 @@ This backend:
 
 ---
 
-## 📌 Project Setup
+##  Project Setup
 Follow these steps to set up the backend:
 
-### 🔹 1. Clone the Repository
+###  1. Clone the Repository
 ```sh
 git clone https://github.com/your-repo/bluestock-backend.git
 cd bluestock-backend
 ```
 
-### 🔹 2. Create a Virtual Environment
+###  2. Create a Virtual Environment
 ```sh
 python -m venv .venv
 ```
@@ -38,12 +38,12 @@ Activate it:
 - **Windows**: `\.venv\Scripts\activate`
 - **Mac/Linux**: `source .venv/bin/activate`
 
-### 🔹 3. Install Dependencies
+###  3. Install Dependencies
 ```sh
 pip install -r requirements.txt
 ```
 
-### 🔹 4. Set Up PostgreSQL Database
+###  4. Set Up PostgreSQL Database
 1. Open **pgAdmin** or **PSQL shell**.
 2. Create the database manually:
 ```sql
@@ -64,18 +64,18 @@ DATABASES = {
 }
 ```
 
-### 🔹 5. Apply Migrations
+###  5. Apply Migrations
 ```sh
 python manage.py makemigrations
 python manage.py migrate
 ```
 
-### 🔹 6. Create a Superuser
+###  6. Create a Superuser
 ```sh
 python manage.py createsuperuser
 ```
 
-### 🔹 7. Start the Development Server
+###  7. Start the Development Server
 ```sh
 python manage.py runserver
 ```
@@ -83,7 +83,7 @@ Access the API at: **http://127.0.0.1:8000/**
 
 ---
 
-## 📌 API Endpoints
+##  API Endpoints
 
 | Method | Endpoint | Description |
 |--------|-------------|----------------|
@@ -93,7 +93,7 @@ Access the API at: **http://127.0.0.1:8000/**
 | **PUT** | `/ipo/companies/{id}/` | Update IPO (Admin only) |
 | **DELETE** | `/ipo/companies/{id}/` | Delete IPO (Admin only) |
 
-🔹 **Filters & Search** are enabled for IPO queries. You can filter IPOs using parameters such as:
+ **Filters & Search** are enabled for IPO queries. You can filter IPOs using parameters such as:
 ```sh
 /ipo/companies/?symbol=AAPL
 /ipo/companies/?open_date=2025-05-01
@@ -101,7 +101,7 @@ Access the API at: **http://127.0.0.1:8000/**
 
 ---
 
-## 🔹 Deployment (Optional)
+##  Deployment (Optional)
 To deploy Bluestock Backend:
 1. Set up a **PostgreSQL database** on a cloud provider.
 2. Use **Gunicorn & Nginx** for production.
@@ -113,7 +113,7 @@ python manage.py collectstatic
 
 ---
 
-## 🔹 Contributing
+##  Contributing
 1. Fork the repository.
 2. Create a feature branch.
 3. Commit changes and push.
@@ -121,7 +121,7 @@ python manage.py collectstatic
 
 ---
 
-## 🔹 License
+##  License
 This project is **MIT Licensed**.
 
 ---
